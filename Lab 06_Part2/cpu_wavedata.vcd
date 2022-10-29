@@ -1,0 +1,2067 @@
+$date
+	Wed Nov 25 10:30:48 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 ! \registers[0] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 " \registers[1] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 # \registers[2] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 $ \registers[3] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 % \registers[4] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 & \registers[5] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 ' \registers[6] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$scope module reg_f $end
+$var reg 8 ( \registers[7] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 ) \memory_array[0] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 * \memory_array[1] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 + \memory_array[2] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 , \memory_array[3] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 - \memory_array[4] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 . \memory_array[5] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 / \memory_array[6] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 0 \memory_array[7] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 1 \memory_array[8] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 2 \memory_array[9] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var reg 8 3 \memory_array[10] [7:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 4 \cache_mem[0] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 5 \cache_mem[1] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 6 \cache_mem[2] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 7 \cache_mem[3] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 8 \cache_mem[4] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 9 \cache_mem[5] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 : \cache_mem[6] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var reg 32 ; \cache_mem[7] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module mycpu $end
+$var wire 1 < BUSY_WAIT $end
+$var wire 1 = CLK $end
+$var wire 32 > INSTRUCTION [31:0] $end
+$var wire 8 ? READ_DATA [7:0] $end
+$var wire 1 @ RESET $end
+$var wire 1 A SELECT3 $end
+$var wire 1 B temp1 $end
+$var wire 1 C isJump $end
+$var wire 1 D isBeq $end
+$var wire 1 E ZERO $end
+$var wire 1 F SELECT4 $end
+$var wire 1 G SELECT2 $end
+$var wire 1 H SELECT1 $end
+$var wire 8 I RESULT [7:0] $end
+$var wire 32 J PC_Reg [31:0] $end
+$var wire 8 K OUT2 [7:0] $end
+$var wire 8 L OUT1 [7:0] $end
+$var wire 32 M Jump_Target [31:0] $end
+$var wire 8 N IN [7:0] $end
+$var wire 32 O Extended_Val [31:0] $end
+$var wire 8 P COMP_OUTPUT [7:0] $end
+$var reg 8 Q MUX_1_OUT [7:0] $end
+$var reg 8 R MUX_2_OUT [7:0] $end
+$var reg 32 S PC [31:0] $end
+$var reg 1 T READ_SIGNAL $end
+$var reg 3 U SELECT [2:0] $end
+$var reg 1 V WRITE $end
+$var reg 1 W WRITE_SIGNAL $end
+$scope module alu_ $end
+$var wire 8 X DATA2 [7:0] $end
+$var wire 3 Y SELECT [2:0] $end
+$var wire 8 Z or_o [7:0] $end
+$var wire 8 [ forward_o [7:0] $end
+$var wire 8 \ and_o [7:0] $end
+$var wire 8 ] add_o [7:0] $end
+$var wire 1 E ZERO $end
+$var wire 8 ^ DATA1 [7:0] $end
+$var reg 8 _ RESULT [7:0] $end
+$scope module add_ $end
+$var wire 8 ` DATA2 [7:0] $end
+$var wire 8 a RESULT [7:0] $end
+$var wire 8 b DATA1 [7:0] $end
+$upscope $end
+$scope module and_ $end
+$var wire 8 c DATA2 [7:0] $end
+$var wire 8 d RESULT [7:0] $end
+$var wire 8 e DATA1 [7:0] $end
+$upscope $end
+$scope module forward $end
+$var wire 8 f DATA2 [7:0] $end
+$var wire 8 g RESULT [7:0] $end
+$upscope $end
+$scope module or_ $end
+$var wire 8 h DATA2 [7:0] $end
+$var wire 8 i RESULT [7:0] $end
+$var wire 8 j DATA1 [7:0] $end
+$upscope $end
+$scope module zero_m $end
+$var wire 8 k RESULT [7:0] $end
+$var wire 1 E ZERO $end
+$var wire 1 l a $end
+$var wire 1 m b $end
+$var wire 1 n c $end
+$var wire 1 o d $end
+$var wire 1 p e $end
+$var wire 1 q f $end
+$upscope $end
+$upscope $end
+$scope module extend_bits_m $end
+$var wire 8 r Offset [7:0] $end
+$var reg 32 s Extended_Val [31:0] $end
+$upscope $end
+$scope module jump_target_adder_m $end
+$var wire 32 t Extended_Val [31:0] $end
+$var wire 32 u PC_Reg [31:0] $end
+$var wire 32 v Jump_Target [31:0] $end
+$upscope $end
+$scope module pc_adder $end
+$var wire 32 w PC [31:0] $end
+$var reg 32 x PC_Reg [31:0] $end
+$upscope $end
+$scope module reg_f $end
+$var wire 1 < BUSY_WAIT $end
+$var wire 1 = CLK $end
+$var wire 8 y IN [7:0] $end
+$var wire 3 z INADDRESS [2:0] $end
+$var wire 3 { OUT1ADDRESS [2:0] $end
+$var wire 3 | OUT2ADDRESS [2:0] $end
+$var wire 1 @ RESET $end
+$var wire 1 V WRITE $end
+$var reg 8 } OUT1 [7:0] $end
+$var reg 8 ~ OUT2 [7:0] $end
+$var integer 32 !" i [31:0] $end
+$var integer 32 "" idx [31:0] $end
+$upscope $end
+$scope module two_comp $end
+$var wire 8 #" COMP_INPUT [7:0] $end
+$var wire 8 $" COMP_OUTPUT [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_memory $end
+$var wire 6 %" address [5:0] $end
+$var wire 1 = clock $end
+$var wire 1 &" read $end
+$var wire 1 @ reset $end
+$var wire 1 '" write $end
+$var wire 32 (" writedata [31:0] $end
+$var reg 1 )" busywait $end
+$var reg 1 *" readaccess $end
+$var reg 32 +" readdata [31:0] $end
+$var reg 1 ," writeaccess $end
+$var integer 32 -" i [31:0] $end
+$var integer 32 ." idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope module cpu_tb $end
+$scope module d_cache $end
+$var wire 1 = clock $end
+$var wire 1 /" hit $end
+$var wire 1 @ reset $end
+$var wire 8 0" write_data [7:0] $end
+$var wire 1 W write $end
+$var wire 1 T read $end
+$var wire 32 1" mem_read_data [31:0] $end
+$var wire 1 )" mem_busy_wait $end
+$var wire 8 2" address [7:0] $end
+$var reg 1 < busy_wait $end
+$var reg 32 3" cache_block [31:0] $end
+$var reg 1 4" dirty $end
+$var reg 3 5" index [2:0] $end
+$var reg 6 6" mem_address [5:0] $end
+$var reg 1 &" mem_read $end
+$var reg 1 '" mem_write $end
+$var reg 32 7" mem_write_data [31:0] $end
+$var reg 3 8" next_state [2:0] $end
+$var reg 2 9" offset [1:0] $end
+$var reg 1 :" read_access $end
+$var reg 8 ;" read_data [7:0] $end
+$var reg 3 <" state [2:0] $end
+$var reg 3 =" tag [2:0] $end
+$var reg 1 >" valid $end
+$var reg 1 ?" write_access $end
+$var integer 32 @" i [31:0] $end
+$var integer 32 A" idx [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 A"
+b1000 @"
+0?"
+x>"
+bx ="
+b0 <"
+bx ;"
+0:"
+bx 9"
+b0 8"
+bx 7"
+bx 6"
+bx 5"
+x4"
+bx 3"
+bx 2"
+bx 1"
+bx 0"
+x/"
+b1011 ."
+b100000000 -"
+0,"
+bx +"
+0*"
+0)"
+bx ("
+0'"
+0&"
+bx %"
+bx $"
+bx #"
+b1000 ""
+bx !"
+bx ~
+bx }
+bx |
+bx {
+bx z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+xq
+xp
+xo
+xn
+xm
+xl
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+0W
+xV
+bx U
+0T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+1@
+bx ?
+bx >
+0=
+0<
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+#40
+b1000 @"
+b1000 !"
+1=
+#50
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+b0 S
+b0 w
+0V
+#60
+b100 J
+b100 u
+b100 x
+#70
+b0 O
+b0 s
+b0 t
+0A
+0B
+b0 r
+0C
+0D
+b0 z
+b0 {
+b1 |
+b1001 >
+#80
+b0 U
+b0 Y
+b1001 R
+b1001 X
+b1001 `
+b1001 c
+b1001 f
+b1001 h
+0G
+0H
+0F
+0=
+#90
+b0 Q
+b0 K
+b0 ~
+b0 #"
+b0 L
+b0 ^
+b0 b
+b0 e
+b0 j
+b0 }
+b0 0"
+0E
+1q
+1p
+1m
+1o
+1l
+1n
+b1001 N
+b1001 y
+b1001 I
+b1001 _
+b1001 k
+b1001 2"
+b0x00x \
+b0x00x d
+bx1xx1 Z
+bx1xx1 i
+b1001 [
+b1001 g
+b100 M
+b100 v
+1V
+#100
+b0 P
+b0 $"
+b1001 Z
+b1001 i
+b0 \
+b0 d
+0@
+#110
+b1001 ]
+b1001 a
+#120
+1=
+#130
+b1001 !
+b100 S
+b100 w
+0V
+#140
+b1000 J
+b1000 u
+b1000 x
+#150
+b1001 L
+b1001 ^
+b1001 b
+b1001 e
+b1001 j
+b1001 }
+b1001 0"
+b100 O
+b100 s
+b100 t
+b1 R
+b1 X
+b1 `
+b1 c
+b1 f
+b1 h
+b1 r
+b1 z
+b10000000000000001 >
+#160
+b1 N
+b1 y
+b1 I
+b1 _
+b1 k
+b1 2"
+b1 \
+b1 d
+b1 [
+b1 g
+0=
+#170
+b1100 M
+b1100 v
+b1010 ]
+b1010 a
+1V
+#200
+1=
+#210
+b1000 S
+b1000 w
+b1 "
+0V
+#220
+b1100 J
+b1100 u
+b1100 x
+#230
+b1 Q
+b1 K
+b1 ~
+b1 #"
+1?"
+1<
+b0 O
+b0 s
+b0 t
+1W
+b0 r
+b0 z
+b1010000000000000000000000001 >
+#240
+b1 9"
+0>"
+04"
+b0 3"
+b0 5"
+b11111111 P
+b11111111 $"
+1G
+0=
+#249
+b10 8"
+0/"
+#250
+b0 ?
+b0 ;"
+#280
+1*"
+1)"
+bx000 %"
+bx000 6"
+1&"
+b10 8"
+b10 <"
+1=
+#320
+0=
+#360
+1=
+#400
+0=
+#440
+1=
+#480
+0=
+#520
+1=
+#560
+0=
+#600
+1=
+#640
+0=
+#680
+1=
+#720
+0=
+#760
+1=
+#800
+0=
+#840
+1=
+#880
+0=
+#920
+1=
+#960
+0=
+#1000
+1=
+#1040
+0=
+#1080
+1=
+#1120
+0=
+#1160
+1=
+#1200
+0=
+#1240
+1=
+#1280
+0=
+#1320
+1=
+#1360
+0=
+#1400
+1=
+#1440
+0=
+#1480
+1=
+#1520
+0=
+#1560
+1=
+#1600
+0=
+#1640
+1=
+#1680
+0=
+#1720
+1=
+#1760
+0=
+#1800
+1=
+#1840
+0=
+#1880
+1=
+#1920
+0=
+#1960
+bx %"
+bx 6"
+0&"
+b11 <"
+b0 8"
+1=
+0*"
+0)"
+#1970
+bx 4
+#1980
+1>"
+b0 ="
+bx 3"
+#1989
+1/"
+#1990
+bx ?
+bx ;"
+bx 4
+#2000
+0=
+#2040
+0?"
+0W
+b0 <"
+0<
+1=
+#2050
+bx00001001xxxxxxxx 4
+#2080
+0=
+#2120
+1=
+#2130
+b1100 S
+b1100 w
+#2140
+b10000 J
+b10000 u
+b10000 x
+#2150
+1?"
+1<
+1W
+b1 {
+b0 |
+b1011000000000000000100000000 >
+#2160
+14"
+bx00001001xxxxxxxx 3"
+b0 R
+b0 X
+b0 `
+b0 c
+b0 f
+b0 h
+0G
+b10000 M
+b10000 v
+0=
+#2170
+b1001 Q
+b1001 K
+b1001 ~
+b1001 #"
+b1 L
+b1 ^
+b1 b
+b1 e
+b1 j
+b1 }
+b1 0"
+1E
+0q
+0p
+0o
+0n
+0m
+0l
+b0 N
+b0 y
+b0 I
+b0 _
+b0 k
+b0 2"
+b1001 ?
+b1001 ;"
+b0 \
+b0 d
+b0 [
+b0 g
+#2180
+b0 9"
+b11110111 P
+b11110111 $"
+b1 Z
+b1 i
+#2190
+bx ?
+bx ;"
+b1 ]
+b1 a
+#2200
+0?"
+0W
+0<
+1=
+#2210
+bx0000100100000001 4
+#2240
+0=
+#2280
+1=
+#2290
+b10000 S
+b10000 w
+#2300
+b10100 J
+b10100 u
+b10100 x
+#2310
+1:"
+1<
+b1000 O
+b1000 s
+b1000 t
+b1 R
+b1 X
+b1 `
+b1 c
+b1 f
+b1 h
+1T
+b10 r
+b10 z
+b0 {
+b1 |
+b1000000000100000000000000001 >
+#2320
+bx0000100100000001 3"
+0E
+1q
+1p
+1o
+1n
+1m
+1l
+b1001 R
+b1001 X
+b1001 `
+b1001 c
+b1001 f
+b1001 h
+bx N
+bx y
+b1 I
+b1 _
+b1 k
+b1 2"
+1G
+1F
+b1 \
+b1 d
+b1 [
+b1 g
+0=
+#2330
+b1 R
+b1 X
+b1 `
+b1 c
+b1 f
+b1 h
+b1 Q
+b1 9"
+b1 K
+b1 ~
+b1 #"
+b1001 L
+b1001 ^
+b1001 b
+b1001 e
+b1001 j
+b1001 }
+b1001 0"
+b1 N
+b1 y
+b1001 I
+b1001 _
+b1001 k
+b1001 2"
+b1 ?
+b1 ;"
+b1001 Z
+b1001 i
+b1001 [
+b1001 g
+b11100 M
+b11100 v
+1V
+#2340
+0>"
+04"
+bx ="
+b0 3"
+b10 5"
+b1 I
+b1 _
+b1 k
+b1 2"
+b1001 N
+b1001 y
+b1 [
+b1 g
+b1001 ?
+b1001 ;"
+b11111111 P
+b11111111 $"
+#2349
+b10 8"
+0/"
+#2350
+b1 8"
+1>"
+14"
+b0 ="
+bx0000100100000001 3"
+b0 5"
+b0 N
+b0 y
+b0 ?
+b0 ;"
+b1010 ]
+b1010 a
+#2359
+b0 8"
+1/"
+#2360
+0T
+b1001 N
+b1001 y
+0<
+0:"
+b1001 ?
+b1001 ;"
+1=
+#2370
+0V
+#2400
+0=
+#2410
+1V
+#2440
+1=
+#2450
+b10100 S
+b10100 w
+b1001 #
+0V
+#2460
+b11000 J
+b11000 u
+b11000 x
+#2470
+1:"
+1<
+b1100 O
+b1100 s
+b1100 t
+1T
+b11 r
+b11 z
+b1000000000110000000000000001 >
+#2480
+0=
+#2490
+b100100 M
+b100100 v
+1V
+#2520
+0T
+0<
+0:"
+1=
+#2530
+0V
+#2560
+0=
+#2570
+1V
+#2600
+1=
+#2610
+b11000 S
+b11000 w
+b1001 $
+0V
+#2620
+b11100 J
+b11100 u
+b11100 x
+#2630
+b10000 O
+b10000 s
+b10000 t
+b100 r
+b100 z
+b11000001000000000000000001 >
+#2640
+b1010 I
+b1010 _
+b1010 k
+b1010 2"
+b1 U
+b1 Y
+b11111111 R
+b11111111 X
+b11111111 `
+b11111111 c
+b11111111 f
+b11111111 h
+b11111111 Q
+b1010 N
+b1010 y
+1H
+0F
+0=
+#2650
+b1001 \
+b1001 d
+b11111111 Z
+b11111111 i
+b11111111 [
+b11111111 g
+b101100 M
+b101100 v
+1V
+#2660
+0m
+0l
+b1000 N
+b1000 y
+b1000 I
+b1000 _
+b1000 k
+b1000 2"
+b1000 ]
+b1000 a
+#2680
+1=
+#2690
+b1000 %
+b11100 S
+b11100 w
+0V
+#2700
+b100000 J
+b100000 u
+b100000 x
+#2710
+1?"
+1<
+b0 O
+b0 s
+b0 t
+1W
+b0 r
+b0 z
+b100 {
+b10 |
+b1011000000000000010000000010 >
+#2720
+1l
+1m
+b11111111 N
+b11111111 y
+b11111111 I
+b11111111 _
+b11111111 k
+b11111111 2"
+b0 9"
+0>"
+04"
+bx ="
+b0 3"
+b10 5"
+b0 U
+b0 Y
+b1 Q
+b10 R
+b10 X
+b10 `
+b10 c
+b10 f
+b10 h
+0H
+0G
+0=
+#2729
+b10 8"
+0/"
+#2730
+b1001 Q
+b11 9"
+b111 5"
+b1001 K
+b1001 ~
+b1001 #"
+b1000 L
+b1000 ^
+b1000 b
+b1000 e
+b1000 j
+b1000 }
+b1000 0"
+b10 N
+b10 y
+b10 I
+b10 _
+b10 k
+b10 2"
+b0 ?
+b0 ;"
+b0 \
+b0 d
+b1011 Z
+b1011 i
+b10 [
+b10 g
+b100000 M
+b100000 v
+#2740
+b1 8"
+b10 9"
+1>"
+14"
+b0 ="
+bx0000100100000001 3"
+b0 5"
+b11110111 P
+b11110111 $"
+b1010 Z
+b1010 i
+#2749
+b0 8"
+1/"
+#2750
+bx ?
+bx ;"
+b1010 ]
+b1010 a
+#2760
+0?"
+0W
+0<
+1=
+#2770
+bx000010000000100100000001 4
+#2800
+0=
+#2840
+1=
+#2850
+b100000 S
+b100000 w
+#2860
+b100100 J
+b100100 u
+b100100 x
+#2870
+1:"
+1<
+b10100 O
+b10100 s
+b10100 t
+1T
+b101 r
+b101 z
+b0 {
+b1001000001010000000000000010 >
+#2880
+bx000010000000100100000001 3"
+bx N
+bx y
+1F
+0=
+#2890
+b1001 L
+b1001 ^
+b1001 b
+b1001 e
+b1001 j
+b1001 }
+b1001 0"
+b1000 N
+b1000 y
+b1000 ?
+b1000 ;"
+b111000 M
+b111000 v
+1V
+#2900
+b1011 Z
+b1011 i
+#2910
+b1011 ]
+b1011 a
+#2920
+0T
+0<
+0:"
+1=
+#2930
+0V
+#2960
+0=
+#2970
+1V
+#3000
+1=
+#3010
+b100100 S
+b100100 w
+b1000 &
+0V
+#3020
+b101000 J
+b101000 u
+b101000 x
+#3030
+1?"
+1<
+b0 O
+b0 s
+b0 t
+b100000 R
+b100000 X
+b100000 `
+b100000 c
+b100000 f
+b100000 h
+1W
+b0 r
+b0 z
+b100 {
+b0 |
+b1011000000000000010000100000 >
+#3040
+0o
+0n
+0m
+0l
+b100000 N
+b100000 y
+b100000 I
+b100000 _
+b100000 k
+b100000 2"
+0F
+b101001 Z
+b101001 i
+b100000 [
+b100000 g
+0=
+#3049
+b1 8"
+0/"
+#3050
+b0 9"
+b1000 L
+b1000 ^
+b1000 b
+b1000 e
+b1000 j
+b1000 }
+b1000 0"
+b101000 M
+b101000 v
+b101001 ]
+b101001 a
+#3060
+b1 ?
+b1 ;"
+b101000 Z
+b101000 i
+#3070
+b101000 ]
+b101000 a
+#3080
+1,"
+1)"
+bx000010000000100100000001 ("
+bx000010000000100100000001 7"
+b0 %"
+b0 6"
+1'"
+b1 8"
+b1 <"
+1=
+#3120
+0=
+#3160
+1=
+#3200
+0=
+#3240
+1=
+#3280
+0=
+#3320
+1=
+#3360
+0=
+#3400
+1=
+#3440
+0=
+#3480
+1=
+#3520
+0=
+#3560
+1=
+b1 )
+#3600
+0=
+#3640
+1=
+#3680
+0=
+#3720
+1=
+#3760
+0=
+#3800
+1=
+#3840
+0=
+#3880
+1=
+#3920
+0=
+#3960
+1=
+b1001 *
+#4000
+0=
+#4040
+1=
+#4080
+0=
+#4120
+1=
+#4160
+0=
+#4200
+1=
+#4240
+0=
+#4280
+1=
+#4320
+0=
+#4360
+1=
+b1000 +
+#4400
+0=
+#4440
+1=
+#4480
+0=
+#4520
+1=
+#4560
+0=
+#4600
+1=
+#4640
+0=
+#4680
+1=
+#4720
+0=
+#4760
+1*"
+bx ("
+bx 7"
+0'"
+1&"
+b10 <"
+b10 8"
+1=
+0,"
+1)"
+bx ,
+#4800
+0=
+#4840
+1=
+#4880
+0=
+#4920
+1=
+#4960
+0=
+#5000
+1=
+#5040
+0=
+#5080
+1=
+#5120
+0=
+#5160
+1=
+#5200
+0=
+#5240
+1=
+bx00000001 +"
+bx00000001 1"
+#5280
+0=
+#5320
+1=
+#5360
+0=
+#5400
+1=
+#5440
+0=
+#5480
+1=
+#5520
+0=
+#5560
+1=
+#5600
+0=
+#5640
+1=
+bx0000100100000001 +"
+bx0000100100000001 1"
+#5680
+0=
+#5720
+1=
+#5760
+0=
+#5800
+1=
+#5840
+0=
+#5880
+1=
+#5920
+0=
+#5960
+1=
+#6000
+0=
+#6040
+1=
+bx000010000000100100000001 +"
+bx000010000000100100000001 1"
+#6080
+0=
+#6120
+1=
+#6160
+0=
+#6200
+1=
+#6240
+0=
+#6280
+1=
+#6320
+0=
+#6360
+1=
+#6400
+0=
+#6440
+bx %"
+bx 6"
+0&"
+b11 <"
+b0 8"
+1=
+0*"
+0)"
+#6450
+bx000010000000100100000001 4
+#6460
+04"
+b1 ="
+#6469
+1/"
+#6470
+bx000010000000100100000001 4
+#6480
+0=
+#6520
+0?"
+0W
+b0 <"
+0<
+1=
+#6530
+b101000 S
+b101000 w
+bx000010000000100100001000 4
+#6540
+b101100 J
+b101100 u
+b101100 x
+#6550
+1:"
+1<
+b11000 O
+b11000 s
+b11000 t
+1T
+b110 r
+b110 z
+b0 {
+b1001000001100000000000100000 >
+#6560
+14"
+bx000010000000100100001000 3"
+b1 N
+b1 y
+1F
+0=
+#6570
+b1001 L
+b1001 ^
+b1001 b
+b1001 e
+b1001 j
+b1001 }
+b1001 0"
+b1000 N
+b1000 y
+b1000 ?
+b1000 ;"
+b1000100 M
+b1000100 v
+1V
+#6580
+b101001 Z
+b101001 i
+#6590
+b101001 ]
+b101001 a
+#6600
+0T
+0<
+0:"
+1=
+#6610
+b1000 '
+0V
+#6640
+0=
+#6650
+1V
+#6680
+1=
+#6690
+b101100 S
+b101100 w
+b1000 '
+0V
+#6700
+b110000 J
+b110000 u
+b110000 x
+#6710
+b1111111111111111111111xxxxxxxx00 O
+b1111111111111111111111xxxxxxxx00 s
+b1111111111111111111111xxxxxxxx00 t
+xA
+bx R
+bx X
+bx `
+bx c
+bx f
+bx h
+bx r
+xC
+xD
+bx z
+bx {
+bx |
+bx >
+#6720
+xB
+xE
+xq
+xl
+xm
+xn
+xo
+xp
+b11110111 R
+b11110111 X
+b11110111 `
+b11110111 c
+b11110111 f
+b11110111 h
+b11110111 Q
+bx N
+bx y
+bx I
+bx _
+bx k
+bx 2"
+xG
+xH
+xF
+b0x00x \
+b0x00x d
+bx1xx1 Z
+bx1xx1 i
+bx [
+bx g
+0=
+#6729
+x/"
+#6730
+bx K
+bx ~
+bx #"
+bx L
+bx ^
+bx b
+bx e
+bx j
+bx }
+bx 0"
+1n
+0B
+1l
+1m
+1o
+1p
+1q
+0E
+b11110111 I
+b11110111 _
+b11110111 k
+b11110111 2"
+b1 \
+b1 d
+b11111111 Z
+b11111111 i
+b11110111 [
+b11110111 g
+bx M
+bx v
+xV
+#6739
+0/"
+#6740
+bx R
+bx X
+bx `
+bx c
+bx f
+bx h
+bx Q
+bx P
+bx $"
+b1111x111 Z
+b1111x111 i
+bx0xxx \
+bx0xxx d
+#6750
+xB
+xE
+xq
+xp
+xo
+xn
+xm
+xl
+bx I
+bx _
+bx k
+bx 2"
+bx \
+bx d
+bx Z
+bx i
+bx [
+bx g
+bx ]
+bx a
+#6759
+x/"
+#6760
+1=
+#6770
+bx S
+bx w
+0V
+#6780
+bx J
+bx u
+bx x
+#6800
+0=
+#6810
+xV
+#6840
+1=
+#6850
+0V
+#6880
+0=
+#6890
+xV
+#6920
+1=
+#6930
+0V
+#6960
+0=
+#6970
+xV
+#7000
+1=
+#7010
+0V
+#7040
+0=
+#7050
+xV
+#7080
+1=
+#7090
+0V
+#7120
+0=
+#7130
+xV
+#7160
+1=
+#7170
+0V
+#7200
+0=
+#7210
+xV
+#7240
+1=
+#7250
+0V
+#7280
+0=
+#7290
+xV
+#7320
+1=
+#7330
+0V
+#7360
+0=
+#7370
+xV
+#7400
+1=
+#7410
+0V
+#7440
+0=
+#7450
+xV
+#7480
+1=
+#7490
+0V
+#7520
+0=
+#7530
+xV
+#7560
+1=
+#7570
+0V
+#7600
+0=
+#7610
+xV
+#7640
+1=
+#7650
+0V
+#7680
+0=
+#7690
+xV
+#7720
+1=
+#7730
+0V
+#7760
+0=
+#7770
+xV
+#7800
+1=
+#7810
+0V
+#7840
+0=
+#7850
+xV
+#7880
+1=
+#7890
+0V
+#7920
+0=
+#7930
+xV
+#7960
+1=
+#7970
+0V
+#8000
+0=
+#8010
+xV
+#8040
+1=
+#8050
+0V
+#8080
+0=
+#8090
+xV
+#8120
+1=
+#8130
+0V
+#8160
+0=
+#8170
+xV
+#8200
+1=
+#8210
+0V
+#8240
+0=
+#8250
+xV
+#8280
+1=
+#8290
+0V
+#8320
+0=
+#8330
+xV
+#8360
+1=
+#8370
+0V
+#8400
+0=
+#8410
+xV
+#8440
+1=
+#8450
+0V
+#8480
+0=
+#8490
+xV
+#8520
+1=
+#8530
+0V
+#8560
+0=
+#8570
+xV
+#8600
+1=
+#8610
+0V
+#8640
+0=
+#8650
+xV
+#8680
+1=
+#8690
+0V
+#8720
+0=
+#8730
+xV
+#8760
+1=
+#8770
+0V
+#8800
+0=
+#8810
+xV
+#8840
+1=
+#8850
+0V
+#8880
+0=
+#8890
+xV
+#8920
+1=
+#8930
+0V
+#8960
+0=
+#8970
+xV
+#9000
+1=
+#9010
+0V
+#9040
+0=
+#9050
+xV
+#9080
+1=
+#9090
+0V
+#9120
+0=
+#9130
+xV
+#9160
+1=
+#9170
+0V
+#9200
+0=
+#9210
+xV
+#9240
+1=
+#9250
+0V
+#9280
+0=
+#9290
+xV
+#9320
+1=
+#9330
+0V
+#9360
+0=
+#9370
+xV
+#9400
+1=
+#9410
+0V
+#9440
+0=
+#9450
+xV
+#9480
+1=
+#9490
+0V
+#9520
+0=
+#9530
+xV
+#9560
+1=
+#9570
+0V
+#9600
+0=
+#9610
+xV
+#9640
+1=
+#9650
+0V
+#9680
+0=
+#9690
+xV
+#9720
+1=
+#9730
+0V
+#9760
+0=
+#9770
+xV
+#9800
+1=
+#9810
+0V
+#9840
+0=
+#9850
+xV
+#9880
+1=
+#9890
+0V
+#9920
+0=
+#9930
+xV
+#9960
+1=
+#9970
+0V
+#10000
+0=

@@ -1,0 +1,112 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fa814f05950 .scope module, "alu" "alu" 2 4;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "DATA1"
+    .port_info 1 /INPUT 8 "DATA2"
+    .port_info 2 /OUTPUT 8 "RESULT"
+    .port_info 3 /INPUT 3 "SELECT"
+o0x7fa816032008 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0x7fa814f16bc0_0 .net "DATA1", 7 0, o0x7fa816032008;  0 drivers
+o0x7fa816032038 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0x7fa814f16c70_0 .net "DATA2", 7 0, o0x7fa816032038;  0 drivers
+v0x7fa814f16d90_0 .var "RESULT", 7 0;
+o0x7fa816032368 .functor BUFZ 3, C4<zzz>; HiZ drive
+v0x7fa814f16e20_0 .net "SELECT", 2 0, o0x7fa816032368;  0 drivers
+v0x7fa814f16eb0_0 .net "add_o", 7 0, L_0x7fa814f172e0;  1 drivers
+v0x7fa814f16f80_0 .net "and_o", 7 0, L_0x7fa814f174e0;  1 drivers
+v0x7fa814f17030_0 .net "forward_o", 7 0, L_0x7fa814f171e0;  1 drivers
+v0x7fa814f170e0_0 .net "or_o", 7 0, L_0x7fa814f175d0;  1 drivers
+E_0x7fa814f04740/0 .event edge, v0x7fa814f16e20_0, v0x7fa814f16ad0_0, v0x7fa814f162a0_0, v0x7fa814f15e10_0;
+E_0x7fa814f04740/1 .event edge, v0x7fa814f16670_0;
+E_0x7fa814f04740 .event/or E_0x7fa814f04740/0, E_0x7fa814f04740/1;
+S_0x7fa814f05ab0 .scope module, "add_" "ADD" 2 15, 2 71 0, S_0x7fa814f05950;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "DATA1"
+    .port_info 1 /INPUT 8 "DATA2"
+    .port_info 2 /OUTPUT 8 "RESULT"
+v0x7fa814f05cb0_0 .net "DATA1", 7 0, o0x7fa816032008;  alias, 0 drivers
+v0x7fa814f15d60_0 .net "DATA2", 7 0, o0x7fa816032038;  alias, 0 drivers
+v0x7fa814f15e10_0 .net "RESULT", 7 0, L_0x7fa814f172e0;  alias, 1 drivers
+L_0x7fa814f172e0 .delay 8 (2,2,2) L_0x7fa814f172e0/d;
+L_0x7fa814f172e0/d .arith/sum 8, o0x7fa816032008, o0x7fa816032038;
+S_0x7fa814f15f20 .scope module, "and_" "AND" 2 16, 2 87 0, S_0x7fa814f05950;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "DATA1"
+    .port_info 1 /INPUT 8 "DATA2"
+    .port_info 2 /OUTPUT 8 "RESULT"
+L_0x7fa814f174e0/d .functor AND 8, o0x7fa816032008, o0x7fa816032038, C4<11111111>, C4<11111111>;
+L_0x7fa814f174e0 .delay 8 (1,1,1) L_0x7fa814f174e0/d;
+v0x7fa814f16130_0 .net "DATA1", 7 0, o0x7fa816032008;  alias, 0 drivers
+v0x7fa814f161f0_0 .net "DATA2", 7 0, o0x7fa816032038;  alias, 0 drivers
+v0x7fa814f162a0_0 .net "RESULT", 7 0, L_0x7fa814f174e0;  alias, 1 drivers
+S_0x7fa814f163a0 .scope module, "forward" "FORWARD" 2 14, 2 54 0, S_0x7fa814f05950;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "DATA2"
+    .port_info 1 /OUTPUT 8 "RESULT"
+L_0x7fa814f171e0/d .functor BUFZ 8, o0x7fa816032038, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0x7fa814f171e0 .delay 8 (1,1,1) L_0x7fa814f171e0/d;
+v0x7fa814f16580_0 .net "DATA2", 7 0, o0x7fa816032038;  alias, 0 drivers
+v0x7fa814f16670_0 .net "RESULT", 7 0, L_0x7fa814f171e0;  alias, 1 drivers
+S_0x7fa814f16730 .scope module, "or_" "OR" 2 17, 2 102 0, S_0x7fa814f05950;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "DATA1"
+    .port_info 1 /INPUT 8 "DATA2"
+    .port_info 2 /OUTPUT 8 "RESULT"
+L_0x7fa814f175d0/d .functor OR 8, o0x7fa816032008, o0x7fa816032038, C4<00000000>, C4<00000000>;
+L_0x7fa814f175d0 .delay 8 (1,1,1) L_0x7fa814f175d0/d;
+v0x7fa814f16950_0 .net "DATA1", 7 0, o0x7fa816032008;  alias, 0 drivers
+v0x7fa814f16a30_0 .net "DATA2", 7 0, o0x7fa816032038;  alias, 0 drivers
+v0x7fa814f16ad0_0 .net "RESULT", 7 0, L_0x7fa814f175d0;  alias, 1 drivers
+    .scope S_0x7fa814f05950;
+T_0 ;
+    %wait E_0x7fa814f04740;
+    %load/vec4 v0x7fa814f16e20_0;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 3;
+    %cmp/u;
+    %jmp/1 T_0.0, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 3;
+    %cmp/u;
+    %jmp/1 T_0.1, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 3;
+    %cmp/u;
+    %jmp/1 T_0.2, 6;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 3;
+    %cmp/u;
+    %jmp/1 T_0.3, 6;
+    %jmp T_0.4;
+T_0.0 ;
+    %load/vec4 v0x7fa814f17030_0;
+    %store/vec4 v0x7fa814f16d90_0, 0, 8;
+    %jmp T_0.4;
+T_0.1 ;
+    %load/vec4 v0x7fa814f16eb0_0;
+    %store/vec4 v0x7fa814f16d90_0, 0, 8;
+    %jmp T_0.4;
+T_0.2 ;
+    %load/vec4 v0x7fa814f16f80_0;
+    %store/vec4 v0x7fa814f16d90_0, 0, 8;
+    %jmp T_0.4;
+T_0.3 ;
+    %load/vec4 v0x7fa814f170e0_0;
+    %store/vec4 v0x7fa814f16d90_0, 0, 8;
+    %jmp T_0.4;
+T_0.4 ;
+    %pop/vec4 1;
+    %jmp T_0;
+    .thread T_0, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Part1.v";

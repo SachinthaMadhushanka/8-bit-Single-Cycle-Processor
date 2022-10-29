@@ -1,0 +1,407 @@
+$date
+	Thu Nov 19 16:26:38 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 ! \cache_mem[0] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 " \cache_mem[1] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 # \cache_mem[2] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 $ \cache_mem[3] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 % \cache_mem[4] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 & \cache_mem[5] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 ' \cache_mem[6] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var reg 32 ( \cache_mem[7] [31:0] $end
+$upscope $end
+$upscope $end
+$scope module testbench $end
+$scope module d_cache $end
+$var wire 8 ) address [7:0] $end
+$var wire 32 * cache_block [31:0] $end
+$var wire 1 + cache_dirty $end
+$var wire 3 , cache_tag [2:0] $end
+$var wire 1 - cache_valid $end
+$var wire 1 . clock $end
+$var wire 1 / dirty $end
+$var wire 1 0 hit $end
+$var wire 1 1 mem_busywait $end
+$var wire 32 2 mem_readdata [31:0] $end
+$var wire 1 3 read $end
+$var wire 1 4 reset $end
+$var wire 1 5 write $end
+$var wire 8 6 write_data [7:0] $end
+$var wire 3 7 tag [2:0] $end
+$var wire 1 8 offset $end
+$var wire 3 9 index [2:0] $end
+$var reg 1 : busywait $end
+$var reg 6 ; mem_address [5:0] $end
+$var reg 1 < mem_read $end
+$var reg 1 = mem_write $end
+$var reg 32 > mem_writedata [31:0] $end
+$var reg 3 ? next_state [2:0] $end
+$var reg 8 @ read_data [7:0] $end
+$var reg 8 A select_word [7:0] $end
+$var reg 3 B state [2:0] $end
+$var integer 32 C i [31:0] $end
+$var integer 32 D idx [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 D
+b100000 C
+b0 B
+bx A
+bx @
+b0 ?
+b0xxxxxxxx >
+0=
+0<
+bx ;
+0:
+bx 9
+x8
+bx 7
+bx 6
+x5
+14
+x3
+bx 2
+x1
+x0
+z/
+0.
+x-
+bx ,
+x+
+bx *
+bx )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#40
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+b100000 C
+1.
+#70
+04
+#80
+0.
+#120
+1.
+#160
+0.
+#180
+18
+b10 9
+b100 7
+01
+b100 6
+b10001001 )
+15
+03
+#190
+b0 A
+0+
+0-
+b0 *
+#199
+00
+#200
+1.
+#240
+0.
+#280
+1.
+#290
+b110 9
+b100100 6
+b10011011 )
+#320
+0.
+#360
+1.
+#400
+0.
+#440
+1.
+#450
+b10 9
+b10001001 )
+05
+13
+#480
+0.
+#520
+1.
+#560
+0.
+#600
+1.
+#640
+0.
+#680
+1.
+#720
+0.
+#760
+1.
+#800
+0.
+#840
+1.
+#880
+0.
+#920
+1.
+#960
+0.
+#1000
+1.
+#1040
+0.
+#1080
+1.
+#1120
+0.
+#1160
+1.
+#1200
+0.
+#1240
+1.
+#1280
+0.
+#1320
+1.
+#1360
+0.
+#1400
+1.
+#1440
+0.
+#1480
+1.
+#1520
+0.
+#1560
+1.
+#1600
+0.
+#1640
+1.
+#1680
+0.
+#1720
+1.
+#1760
+0.
+#1800
+1.
+#1840
+0.
+#1880
+1.
+#1920
+0.
+#1960
+1.
+#2000
+0.
+#2040
+1.
+#2080
+0.
+#2120
+1.
+#2160
+0.
+#2200
+1.
+#2240
+0.
+#2280
+1.
+#2320
+0.
+#2360
+1.
+#2400
+0.
+#2440
+1.
+#2480
+0.
+#2520
+1.
+#2560
+0.
+#2600
+1.
+#2640
+0.
+#2680
+1.
+#2720
+0.
+#2760
+1.
+#2800
+0.
+#2840
+1.
+#2880
+0.
+#2920
+1.
+#2960
+0.
+#3000
+1.
+#3040
+0.
+#3080
+1.
+#3120
+0.
+#3160
+1.
+#3200
+0.
+#3240
+1.
+#3280
+0.
+#3320
+1.
+#3360
+0.
+#3400
+1.
+#3440
+0.
+#3480
+1.
+#3520
+0.
+#3560
+1.
+#3600
+0.
+#3640
+1.
+#3680
+0.
+#3720
+1.
+#3760
+0.
+#3800
+1.
+#3840
+0.
+#3880
+1.
+#3920
+0.
+#3960
+1.
+#4000
+0.
+#4040
+1.
+#4080
+0.
+#4120
+1.
+#4160
+0.
+#4200
+1.
+#4240
+0.
+#4280
+1.
+#4320
+0.
+#4360
+1.
+#4400
+0.
+#4440
+1.
+#4480
+0.
+#4520
+1.
+#4560
+0.
+#4600
+1.
+#4640
+0.
+#4680
+1.
+#4720
+0.
+#4760
+1.
+#4800
+0.
+#4840
+1.
+#4880
+0.
+#4920
+1.
+#4960
+0.
+#5000
+1.

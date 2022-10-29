@@ -1,0 +1,184 @@
+$date
+	Wed Oct 21 09:43:45 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Testbench $end
+$var wire 8 ! result [7:0] $end
+$var reg 8 " data1 [7:0] $end
+$var reg 8 # data2 [7:0] $end
+$var reg 3 $ select [2:0] $end
+$scope module alu_t $end
+$var wire 8 % DATA1 [7:0] $end
+$var wire 8 & DATA2 [7:0] $end
+$var wire 3 ' SELECT [2:0] $end
+$var wire 8 ( or_o [7:0] $end
+$var wire 8 ) forward_o [7:0] $end
+$var wire 8 * and_o [7:0] $end
+$var wire 8 + add_o [7:0] $end
+$var reg 8 , RESULT [7:0] $end
+$scope module add_ $end
+$var wire 8 - DATA1 [7:0] $end
+$var wire 8 . DATA2 [7:0] $end
+$var reg 8 / RESULT [7:0] $end
+$upscope $end
+$scope module and_ $end
+$var wire 8 0 DATA1 [7:0] $end
+$var wire 8 1 DATA2 [7:0] $end
+$var reg 8 2 RESULT [7:0] $end
+$upscope $end
+$scope module forward $end
+$var wire 8 3 DATA2 [7:0] $end
+$var reg 8 4 RESULT [7:0] $end
+$upscope $end
+$scope module or_ $end
+$var wire 8 5 DATA1 [7:0] $end
+$var wire 8 6 DATA2 [7:0] $end
+$var reg 8 7 RESULT [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 7
+b0 6
+b0 5
+bx 4
+b0 3
+bx 2
+b0 1
+b0 0
+bx /
+b0 .
+b0 -
+bx ,
+bx +
+bx *
+bx )
+bx (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+bx !
+$end
+#1
+b0 !
+b0 ,
+b0 )
+b0 4
+b0 (
+b0 7
+b0 *
+b0 2
+#2
+b0 +
+b0 /
+#5
+b110 #
+b110 &
+b110 .
+b110 1
+b110 3
+b110 6
+b100 "
+b100 %
+b100 -
+b100 0
+b100 5
+#6
+b110 !
+b110 ,
+b110 )
+b110 4
+b100 *
+b100 2
+b110 (
+b110 7
+#7
+b1010 +
+b1010 /
+#10
+b1010 !
+b1010 ,
+b1 $
+b1 '
+b101 #
+b101 &
+b101 .
+b101 1
+b101 3
+b101 6
+#11
+b101 (
+b101 7
+b101 )
+b101 4
+#12
+b1001 !
+b1001 ,
+b1001 +
+b1001 /
+#15
+b100 !
+b100 ,
+b10 $
+b10 '
+b10 #
+b10 &
+b10 .
+b10 1
+b10 3
+b10 6
+b101 "
+b101 %
+b101 -
+b101 0
+b101 5
+#16
+b0 !
+b0 ,
+b10 )
+b10 4
+b0 *
+b0 2
+b111 (
+b111 7
+#17
+b111 +
+b111 /
+#20
+b111 !
+b111 ,
+b11 $
+b11 '
+b110 "
+b110 %
+b110 -
+b110 0
+b110 5
+b110 #
+b110 &
+b110 .
+b110 1
+b110 3
+b110 6
+#21
+b110 !
+b110 ,
+b110 (
+b110 7
+b110 *
+b110 2
+b110 )
+b110 4
+#22
+b1100 +
+b1100 /

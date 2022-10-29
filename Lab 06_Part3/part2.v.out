@@ -1,0 +1,173 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fc39e406560 .scope module, "reg_file" "reg_file" 2 5;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 8 "IN"
+    .port_info 1 /OUTPUT 8 "OUT1"
+    .port_info 2 /OUTPUT 8 "OUT2"
+    .port_info 3 /INPUT 3 "INADDRESS"
+    .port_info 4 /INPUT 3 "OUT1ADDRESS"
+    .port_info 5 /INPUT 3 "OUT2ADDRESS"
+    .port_info 6 /INPUT 1 "WRITE"
+    .port_info 7 /INPUT 1 "CLK"
+    .port_info 8 /INPUT 1 "RESET"
+o0x7fc39e532008 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fc39e704080_0 .net "CLK", 0 0, o0x7fc39e532008;  0 drivers
+o0x7fc39e532038 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0x7fc39e40cd10_0 .net "IN", 7 0, o0x7fc39e532038;  0 drivers
+o0x7fc39e532068 .functor BUFZ 3, C4<zzz>; HiZ drive
+v0x7fc39e40cdd0_0 .net "INADDRESS", 2 0, o0x7fc39e532068;  0 drivers
+v0x7fc39e40ce70_0 .var "OUT1", 7 0;
+o0x7fc39e5320c8 .functor BUFZ 3, C4<zzz>; HiZ drive
+v0x7fc39e40cf20_0 .net "OUT1ADDRESS", 2 0, o0x7fc39e5320c8;  0 drivers
+v0x7fc39e40d010_0 .var "OUT2", 7 0;
+o0x7fc39e532128 .functor BUFZ 3, C4<zzz>; HiZ drive
+v0x7fc39e40d0c0_0 .net "OUT2ADDRESS", 2 0, o0x7fc39e532128;  0 drivers
+o0x7fc39e532158 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fc39e40d170_0 .net "RESET", 0 0, o0x7fc39e532158;  0 drivers
+o0x7fc39e532188 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fc39e40d210_0 .net "WRITE", 0 0, o0x7fc39e532188;  0 drivers
+v0x7fc39e40d320_0 .var "finishWrite", 0 0;
+v0x7fc39e40d3b0_0 .var/i "i", 31 0;
+v0x7fc39e40d460_0 .var/i "idx", 31 0;
+v0x7fc39e40d510_0 .var "interOUT1", 7 0;
+v0x7fc39e40d5c0_0 .var "interOUT2", 7 0;
+v0x7fc39e40d670 .array "registers", 0 7, 7 0;
+v0x7fc39e40d670_0 .array/port v0x7fc39e40d670, 0;
+v0x7fc39e40d670_1 .array/port v0x7fc39e40d670, 1;
+v0x7fc39e40d670_2 .array/port v0x7fc39e40d670, 2;
+v0x7fc39e40d670_3 .array/port v0x7fc39e40d670, 3;
+E_0x7fc39e4063b0/0 .event edge, v0x7fc39e40d670_0, v0x7fc39e40d670_1, v0x7fc39e40d670_2, v0x7fc39e40d670_3;
+v0x7fc39e40d670_4 .array/port v0x7fc39e40d670, 4;
+v0x7fc39e40d670_5 .array/port v0x7fc39e40d670, 5;
+v0x7fc39e40d670_6 .array/port v0x7fc39e40d670, 6;
+v0x7fc39e40d670_7 .array/port v0x7fc39e40d670, 7;
+E_0x7fc39e4063b0/1 .event edge, v0x7fc39e40d670_4, v0x7fc39e40d670_5, v0x7fc39e40d670_6, v0x7fc39e40d670_7;
+E_0x7fc39e4063b0 .event/or E_0x7fc39e4063b0/0, E_0x7fc39e4063b0/1;
+E_0x7fc39e704150 .event edge, v0x7fc39e40d320_0;
+E_0x7fc39e704190 .event edge, v0x7fc39e40d210_0, v0x7fc39e40d170_0, v0x7fc39e40d0c0_0, v0x7fc39e40cf20_0;
+E_0x7fc39e7041e0 .event posedge, v0x7fc39e704080_0;
+    .scope S_0x7fc39e406560;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fc39e40d320_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x7fc39e406560;
+T_1 ;
+    %vpi_call 2 20 "$dumpfile", "cpu_wavedata.vcd" {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7fc39e40d460_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x7fc39e40d460_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %vpi_call 2 23 "$dumpvars", 32'sb00000000000000000000000000000000, &A<v0x7fc39e40d670, v0x7fc39e40d460_0 > {0 0 0};
+    %load/vec4 v0x7fc39e40d460_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x7fc39e40d460_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %end;
+    .thread T_1;
+    .scope S_0x7fc39e406560;
+T_2 ;
+    %wait E_0x7fc39e7041e0;
+    %load/vec4 v0x7fc39e40d170_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x7fc39e40d3b0_0, 0, 32;
+T_2.2 ;
+    %load/vec4 v0x7fc39e40d3b0_0;
+    %cmpi/s 7, 0, 32;
+    %flag_or 5, 4;
+    %jmp/0xz T_2.3, 5;
+    %pushi/vec4 0, 0, 8;
+    %ix/getv/s 3, v0x7fc39e40d3b0_0;
+    %ix/load 4, 10, 0; Constant delay
+    %assign/vec4/a/d v0x7fc39e40d670, 0, 4;
+    %load/vec4 v0x7fc39e40d3b0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x7fc39e40d3b0_0, 0, 32;
+    %jmp T_2.2;
+T_2.3 ;
+    %load/vec4 v0x7fc39e40d320_0;
+    %inv;
+    %store/vec4 v0x7fc39e40d320_0, 0, 1;
+T_2.0 ;
+    %load/vec4 v0x7fc39e40d170_0;
+    %nor/r;
+    %load/vec4 v0x7fc39e40d210_0;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.4, 8;
+    %delay 10, 0;
+    %load/vec4 v0x7fc39e40cd10_0;
+    %load/vec4 v0x7fc39e40cdd0_0;
+    %pad/u 5;
+    %ix/vec4 4;
+    %store/vec4a v0x7fc39e40d670, 4, 0;
+    %load/vec4 v0x7fc39e40d320_0;
+    %inv;
+    %store/vec4 v0x7fc39e40d320_0, 0, 1;
+T_2.4 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x7fc39e406560;
+T_3 ;
+    %wait E_0x7fc39e704190;
+    %load/vec4 v0x7fc39e40d210_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_3.0, 8;
+    %load/vec4 v0x7fc39e40cf20_0;
+    %pad/u 5;
+    %ix/vec4 4;
+    %load/vec4a v0x7fc39e40d670, 4;
+    %assign/vec4 v0x7fc39e40ce70_0, 20;
+    %load/vec4 v0x7fc39e40d0c0_0;
+    %pad/u 5;
+    %ix/vec4 4;
+    %load/vec4a v0x7fc39e40d670, 4;
+    %assign/vec4 v0x7fc39e40d010_0, 20;
+T_3.0 ;
+    %jmp T_3;
+    .thread T_3, $push;
+    .scope S_0x7fc39e406560;
+T_4 ;
+    %wait E_0x7fc39e704150;
+    %load/vec4 v0x7fc39e40cf20_0;
+    %pad/u 5;
+    %ix/vec4 4;
+    %load/vec4a v0x7fc39e40d670, 4;
+    %store/vec4 v0x7fc39e40d510_0, 0, 8;
+    %load/vec4 v0x7fc39e40d0c0_0;
+    %pad/u 5;
+    %ix/vec4 4;
+    %load/vec4a v0x7fc39e40d670, 4;
+    %store/vec4 v0x7fc39e40d5c0_0, 0, 8;
+    %delay 20, 0;
+    %load/vec4 v0x7fc39e40d510_0;
+    %store/vec4 v0x7fc39e40ce70_0, 0, 8;
+    %load/vec4 v0x7fc39e40d5c0_0;
+    %store/vec4 v0x7fc39e40d010_0, 0, 8;
+    %jmp T_4;
+    .thread T_4, $push;
+    .scope S_0x7fc39e406560;
+T_5 ;
+    %wait E_0x7fc39e4063b0;
+    %vpi_call 2 88 "$monitor", "%d , %d , %d , %d , %d , %d , %d , %d , %d", $time, &A<v0x7fc39e40d670, 0>, &A<v0x7fc39e40d670, 1>, &A<v0x7fc39e40d670, 2>, &A<v0x7fc39e40d670, 3>, &A<v0x7fc39e40d670, 4>, &A<v0x7fc39e40d670, 5>, &A<v0x7fc39e40d670, 6>, &A<v0x7fc39e40d670, 7> {0 0 0};
+    %jmp T_5;
+    .thread T_5, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "part2.v";
